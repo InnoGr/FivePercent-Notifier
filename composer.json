@@ -1,0 +1,30 @@
+{
+    "name": "fivepercent/notifier",
+    "description": "Send notifications to any system (AMQP as example)",
+    "keywords": [ "notifier", "amqp" ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaliy Zhuk",
+            "email": "zhuk2205@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4",
+        "fivepercent/exception": "~1.0",
+        "fivepercent/reflection": "~1.0"
+    },
+
+    "suggest": {
+        "fivepercent/model-transformer": "For transform events (Used in TransformationAndNormalizationObjectExtractor)",
+        "fivepercent/model-normalizer": "For normalize events (Used in TransformationAndNormalizationObjectExtractor)",
+        "doctrine/annotations": "For read notification metadata from objects",
+        "symfony/event-dispatcher": "Integrate notifier system to Symfony2 EventDispatcher"
+    },
+
+    "autoload": {
+        "psr-4": { "FivePercent\\Component\\Notifier\\": "src/" }
+    }
+}
